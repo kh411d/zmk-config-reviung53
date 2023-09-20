@@ -87,7 +87,7 @@
    &kp GRAVE &kp N1    &kp N2     &kp N3   &kp N4   &kp N5       &kp N6    &kp N7      &kp N8        &kp N9         &kp N0      &trans
    &mo 4     &kp MINUS &kp EQUAL  &kp LBKT &kp RBKT &kp BSLH     &none     &kp MINUS   &kp EQUAL     &kp LBKT       &kp RBKT    &kp SQT
    &trans    &none     &none      &none    &none    &none        &none     &kp PLUS    &kp LT        &kp GT                     &kp COLON
-   &trans    &trans    &trans                       &lt 1 SPACE            &lt 2 SPACE               &trans         &trans      &kp PIPE
+   &trans    &trans    &trans                       &trans                 &trans                    &trans         &trans      &kp PIPE
                         >;
                 };
 
@@ -100,11 +100,11 @@
 // |          |          |          |                                 |                 |        |       |      |  RESET  |
 //
                         bindings = <
-                                     &none            &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4   &none    &none   &none   &bt BT_CLR
+                                     &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4   &none    &none   &none   &bt BT_CLR
    &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none         &rgb_ug RGB_TOG  &none          &none          &none    &none   &none   &none
    &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &none         &none            &none          &none          &none    &none   &none   &none
-   &trans           &none            &none            &none            &none         &none            &none          &none          &none    &none           &none
-   &trans           &trans           &trans                            &trans                         &trans                                 &none   &none   &bootloader
+   &trans           &none            &none            &none            &none         &none            &bootloader    &none          &none    &none           &none
+   &trans           &trans           &trans                            &trans                         &trans                                 &none   &none   &none
                         >;
                 };
 
