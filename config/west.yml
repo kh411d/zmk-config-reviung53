@@ -1,0 +1,13 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: kh411d
+      url-base: https://github.com/kh411d
+  projects:
+    - name: zmk
+      remote: kh411d
+      revision: reviung53
+      import: app/west.yml
+  self:
+    path: config
