@@ -54,9 +54,9 @@
                         bindings = <
                         &kp ESC  &kp F1  &kp F2       &kp F3  &kp F4       &kp F5  &kp F6    &kp F7    &kp F8    &kp DEL
    &kp TAB     &kp Q    &kp W    &kp E   &kp R        &kp T   &kp Y        &kp U   &kp I     &kp O     &kp P     &kp BSPC
-   &ctrlcaps   &kp A    &kp S    &kp D   &kp F        &kp G   &kp H        &kp J   &kp K     &kp L     &kp SEMI  &entdqt
+   &mo4        &kp A    &kp S    &kp D   &kp F        &kp G   &kp H        &kp J   &kp K     &kp L     &kp SEMI  &entdqt
    &kp LSHFT   &kp Z    &kp X    &kp C   &kp V        &kp B   &kp N        &kp M   &kp COMMA &kp DOT             &mt RSHFT FSLH
-   &tog 4      &kp LALT &kp LCMD         &lt 1 SPACE         &lt 2 SPACE                     &kp RCMD  &kp RALT  &mt RCTRL BSLH
+   &kp LCTRL   &kp LALT &kp LCMD         &lt 1 SPACE         &lt 2 SPACE                     &kp RCMD  &kp RALT  &mt RCTRL BSLH
                         >;
                 };
 
@@ -121,10 +121,10 @@
 //
                         bindings = <
                           &kp ESC   &none      &none     &none     &none      &none     &none      &none      &none     &kp DEL
-   &kp TAB      &none     &kp UP    &none      &none     &none     &none      &none     &none      &none      &none     &kp BSPC
-   &mo 4        &kp LEFT  &kp DOWN  &kp RIGHT  &none     &none     &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &none     &none
-   &kp LSHFT    &none     &kp X     &kp C      &kp V     &none     &kp HOME   &kp END   &kp PG_UP  &kp PG_DN            &kp RSHFT
-   &tog 4       &kp LALT  &kp LCMD             &kp SPACE           &kp SPACE                       &kp RCMD   &kp RALT  &kp RCTRL
+   &kp TAB      &kp LC(Q) &kp LC(W) &kp LC(E)  &kp LC(R) &kp LC(T) &none      &none     &none      &none      &none     &kp BSPC
+   &mo 4        &kp LC(A) &kp LC(S) &kp LC(D)  &kp LC(F) &kp LC(G) &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp PG_UP &kp PG_DN
+   &kp LSHFT    &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V) &kp LC(B) &kp LC(N)  &kp HOME  &kp END    &none                &kp RSHFT
+   &kp LCTRL    &kp LALT  &kp LCMD             &kp SPACE           &kp SPACE                       &kp RCMD   &kp RALT  &kp RCTRL
                         >;
                 };
         };
